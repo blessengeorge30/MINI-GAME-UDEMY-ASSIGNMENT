@@ -4,7 +4,7 @@ import React from 'react'
 function PrimaryButton() {
   return (
     <View>
-      <Text>PrimaryButtton</Text>
+      <Text>Primary Button</Text>
     </View>
   )
 }
