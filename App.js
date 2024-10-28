@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import StartgameScreen from './screens/StartgameScreen';
+
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={{fontSize:25}}>Hello world this is the starting page !!!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.rootscreen}>
+      <StartgameScreen />
     </View>
+
   );
+
 }
 
 const styles = StyleSheet.create({
@@ -17,4 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  rootscreen: {
+    backgroundColor: '#ddb52f',
+  }
 });
