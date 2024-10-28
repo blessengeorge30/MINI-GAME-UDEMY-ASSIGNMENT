@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Colors from '../constants /colors'
+import Colors from '../../constants /colors'
 
 
 function Title({children}) {
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
         borderWidth:1.5,
         borderColor:'#fff',
         padding:12
+        
     
        
       
