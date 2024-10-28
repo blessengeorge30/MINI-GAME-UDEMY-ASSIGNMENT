@@ -1,17 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground,SafeAreaView } from 'react-native';
 
 import StartgameScreen from './screens/StartgameScreen';
+import { useState } from 'react';
+import GameScreen from './screens/GameScreen';
 
 
 export default function App() {
+ const [userNumber,setUserNumber] = useState();
+
+ function pickedNumberHandler(pickedNumber){
+  setUserNumber(pickedNumber);
+ }
+
+ let screen = <StartgameScreen onPickNumber={pickedNumberHandler} />
+ if (userNumber){
+  screen = <GameScreen/>
+ }
   return (
     <View style={styles.rootscreen}>
       <ImageBackground source={require('./assets/images/dices.jpg')} 
       resizeMode='cover' 
       style={styles.rootscreen}
       imageStyle={styles.backgroundimg} >
-        <StartgameScreen />
+        <SafeAreaView>
+        {screen}
+        </SafeAreaView>
+       
       </ImageBackground>
 
     </View>
