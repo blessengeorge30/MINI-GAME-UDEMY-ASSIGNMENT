@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   rootscreen: {
+    flex: 1,
     backgroundColor: '#ddb52f',
   }
 });
