@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 import StartgameScreen from './screens/StartgameScreen';
 
@@ -7,7 +7,13 @@ import StartgameScreen from './screens/StartgameScreen';
 export default function App() {
   return (
     <View style={styles.rootscreen}>
-      <StartgameScreen />
+      <ImageBackground source={require('./assets/images/dices.jpg')} 
+      resizeMode='cover' 
+      style={styles.rootscreen}
+      imageStyle={styles.backgroundimg} >
+        <StartgameScreen />
+      </ImageBackground>
+
     </View>
 
   );
@@ -24,5 +30,9 @@ const styles = StyleSheet.create({
   rootscreen: {
     flex: 1,
     backgroundColor: '#ddb52f',
+  },
+  backgroundimg:{
+    opacity: 0.99
   }
+ 
 });

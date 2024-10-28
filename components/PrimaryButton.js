@@ -19,13 +19,13 @@ export default PrimaryButton
 
 const styles = StyleSheet.create({
  buttoninnercontainer:{
-  backgroundColor: '#4e0329',
+  backgroundColor: '#75023c',
   borderRadius: 18,
   paddingVertical: 10,
   padding: 12,
   marginVertical:5,
   shadowOffset:10,
-  shadowOpacity:0.5
+  shadowOpacity:0.2
  },
  buttonoutercontainer:{
   borderRadius:28,
