@@ -1,9 +1,9 @@
 import { View,Text, StyleSheet } from "react-native";
 import Colors from "../../constants /colors";
 
-function instructionText ({children}) {
+function instructionText ({children, style}) {
     return(
-        <Text style={styles.instructiontext}>{children} </Text>
+        <Text style={[styles.instructiontext, style]}>{children} </Text>
     )
 }
 
@@ -11,7 +11,7 @@ export default instructionText;
 
 const styles = StyleSheet.create({
     instructiontext:{
-        fontSize:20,
+        fontSize:22,
         color:Colors.accentcolor100
     },
 })
