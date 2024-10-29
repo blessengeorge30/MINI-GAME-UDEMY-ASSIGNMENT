@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Colors from '../../constants /colors'
+
 
 
 function Title({children}) {
@@ -15,13 +15,15 @@ export default Title
 
 const styles = StyleSheet.create({
     title: {
+      fontFamily:'open-sans-bold',
         fontSize:24,
-        fontweight:'bold',
+        // fontweight:'bold',
         color: 'white',
         textAlign:'center',
-        borderWidth:1.5,
+        borderWidth:0.5,
         borderColor:'#fff',
-        padding:12
+        padding:12,
+        borderRadius: 15
         
     
        

@@ -16,13 +16,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal: 24,
-        marginTop: 35,
-        borderRadius: 25,
+        marginTop: 20,
+        marginBottom:18,
+        borderRadius: 20,
         padding: 30,
         backgroundColor:Colors.primary600,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 2 },
         shadowRadius: 15,
-        shadowOpacity: 0.35
+        shadowOpacity: 0.75
     },
 })

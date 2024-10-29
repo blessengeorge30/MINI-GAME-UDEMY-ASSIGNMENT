@@ -37,6 +37,8 @@ const styles = StyleSheet.create({
  },
  buttontxt:{
   color:'#fff',
+  fontSize:16,
+  padding:3,
   textAlign:'center'
  },
  pressed: {
