@@ -4,12 +4,13 @@ import { useState } from 'react';
 import StartgameScreen from './screens/StartgameScreen';
 import GameOverScreen from './screens/GameOverScreen'
 import GameScreen from './screens/GameScreen';
-
+import { useFonts } from 'expo-font'
 
 export default function App() {
  const [userNumber,setUserNumber] = useState();
  const [gameIsOver,setGameIsOver] = useState(true);
 
+useFonts({});
 
  function pickedNumberHandler(pickedNumber){
   setUserNumber(pickedNumber);
