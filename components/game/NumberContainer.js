@@ -15,10 +15,10 @@ export default NumberContainer
 const styles = StyleSheet.create({
     container: {
         fontSize: 20,
-        borderWidth: 4,
-        bordercolor: '#fff',
-        bordercolor: Colors.accent500,
-        padding:4,
+        borderWidth: 0.5,
+    borderColor:Colors.accentcolor100,
+      
+        padding:14,
         borderRadius:10,
         margin:24,
         alignitem:'center',
