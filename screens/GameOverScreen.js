@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, View, Image,StyleSheet} from 'react-native'
+import { Text, View, Image,StyleSheet, Dimensions} from 'react-native'
 import Title from "../components/ui/Title"
 import Colors from "../constants /colors"
 import PrimaryButton from "../components/ui/PrimaryButton"
@@ -21,7 +21,9 @@ return (
 }
 
 
-export default GameOverScreen
+export default GameOverScreen;
+
+const deviceWidth = Dimensions.get ('window').width;
 
 const styles = StyleSheet.create({
 rootcontainer:{
@@ -34,8 +36,8 @@ rootcontainer:{
 },
 
  imagecontainer: {
-  width:300,
-  height:300,
+  width:deviceWidth < 380 ? 150 : 300,
+  height:deviceWidth < 380 ? 150 : 300,
   borderRadius:150,
   borderWidth:3,
   borderColor: Colors.primary600,
