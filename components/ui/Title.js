@@ -23,11 +23,8 @@ const styles = StyleSheet.create({
         borderWidth:0.5,
         borderColor:'#fff',
         padding:12,
-        borderRadius: 15
-        
-    
-       
-      
-    
+        borderRadius: 15,
+        maxWidth:'80%',
+        width:300
       },
 })

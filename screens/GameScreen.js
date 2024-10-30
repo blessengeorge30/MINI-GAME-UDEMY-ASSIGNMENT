@@ -112,7 +112,8 @@ export default GameScreen
 const styles = StyleSheet.create({
 
   screen: {
-    marginTop: 40
+    marginTop: 40,
+    alignItems:'center'
   },
   title: {
     fontSize: 24,
