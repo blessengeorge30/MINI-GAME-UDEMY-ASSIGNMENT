@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     title: {
       fontFamily:'open-sans-bold',
         fontSize:24,
-        // fontweight:'bold',
         color: 'white',
         textAlign:'center',
         // borderWidth:Platform.OS ==='android' ? 2 : 0,
