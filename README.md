@@ -27,13 +27,13 @@ This project is a Mini-Game Application created as part of an assignment on Udem
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/blessengeorge30/MINI-GAME-UDEMY-ASSIGNMENT
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd MINI-GAME-UDEMY-ASSIGNMENT
 ```
 
 Install dependencies
@@ -45,7 +45,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start
+  npx expo start
 ```
 
 
